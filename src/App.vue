@@ -28,19 +28,23 @@
     </v-app-bar>
 
     <v-content>
-      <MostPopularVideos />
+      <TopicRecommender />
+
+      <!-- <MostPopularVideos /> -->
     </v-content>
   </v-app>
 </template>
 
 <script>
-import MostPopularVideos from "./components/MostPopularVideos";
+// import MostPopularVideos from "./components/MostPopularVideos";
+import TopicRecommender from "./components/TopicRecommender";
 
 export default {
   name: "App",
 
   components: {
-    MostPopularVideos
+    // MostPopularVideos,
+    TopicRecommender
   },
 
   data: () => ({

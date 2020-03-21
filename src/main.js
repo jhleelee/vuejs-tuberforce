@@ -5,8 +5,10 @@ import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import VueAnalytics from "vue-analytics";
+import axios from "axios";
 
 Vue.config.productionTip = false;
+Vue.prototype.$http = axios;
 
 new Vue({
   router,
